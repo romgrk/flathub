@@ -2,13 +2,13 @@
 # Flathub submission manifest: sources are fetched from the release tarball.
 # Reference: doc/bundling.md. Regenerate rather than editing where possible;
 # persistent settings (finish-args etc.) belong in package.json "bundle".
-app-id: io.github.romgrk.mariner
+app-id: io.github.romgrk.Mariner
 runtime: org.gnome.Platform
 runtime-version: '50'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node26
-command: io.github.romgrk.mariner
+command: io.github.romgrk.Mariner
 finish-args:
   - '--socket=wayland'
   - '--socket=fallback-x11'
@@ -29,11 +29,11 @@ modules:
       # the node runtime (the Platform does not ship one)
       - install -Dm755 /usr/lib/sdk/node26/bin/node /app/bin/node
       # launcher + desktop integration
-      - install -Dm755 launcher.sh /app/bin/io.github.romgrk.mariner
-      - install -Dm644 io.github.romgrk.mariner.desktop /app/share/applications/io.github.romgrk.mariner.desktop
-      - install -Dm644 io.github.romgrk.mariner.metainfo.xml /app/share/metainfo/io.github.romgrk.mariner.metainfo.xml
+      - install -Dm755 launcher.sh /app/bin/io.github.romgrk.Mariner
+      - install -Dm644 io.github.romgrk.Mariner.desktop /app/share/applications/io.github.romgrk.Mariner.desktop
+      - install -Dm644 io.github.romgrk.Mariner.metainfo.xml /app/share/metainfo/io.github.romgrk.Mariner.metainfo.xml
       - 'mkdir -p /app/share/icons && cp -a icons/. /app/share/icons/'
     sources:
       - type: archive
         url: https://github.com/romgrk/mariner/releases/download/v0.0.1/Mariner-0.0.1-flatpak-src.tar.gz
-        sha256: d7cdd52659caf26d4ccd88d2193c1df063351a55a3895e4cb35caa465f65efac
+        sha256: 038912cfd5b1af71d45c3391f5563128f20aeec0bd74b2d2317c9598ff53bf1f
