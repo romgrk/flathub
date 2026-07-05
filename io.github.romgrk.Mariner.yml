@@ -15,6 +15,8 @@ finish-args:
   - '--share=ipc'
   - '--device=dri'
   - '--filesystem=host'
+  - '--talk-name=org.gtk.vfs.*'
+  - '--filesystem=xdg-run/gvfsd'
 modules:
   - name: mariner
     buildsystem: simple
@@ -36,4 +38,4 @@ modules:
     sources:
       - type: archive
         url: https://github.com/romgrk/mariner/releases/download/v0.0.1/Mariner-0.0.1-flatpak-src.tar.gz
-        sha256: 038912cfd5b1af71d45c3391f5563128f20aeec0bd74b2d2317c9598ff53bf1f
+        sha256: a094eb2c47d7fe5975442b2d3b8eb3bddca5d27bbff70a02c7b4a658c52c3334
