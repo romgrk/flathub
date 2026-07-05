@@ -17,6 +17,7 @@ finish-args:
   - '--filesystem=host'
   - '--talk-name=org.gtk.vfs.*'
   - '--filesystem=xdg-run/gvfsd'
+  - '--talk-name=org.freedesktop.Flatpak'
 modules:
   - name: mariner
     buildsystem: simple
@@ -38,4 +39,4 @@ modules:
     sources:
       - type: archive
         url: https://github.com/romgrk/mariner/releases/download/v0.0.1/Mariner-0.0.1-flatpak-src.tar.gz
-        sha256: a094eb2c47d7fe5975442b2d3b8eb3bddca5d27bbff70a02c7b4a658c52c3334
+        sha256: 53b0bbbfafc74726b79414a34a7bcdd9e0790103d33ad48d9d62b869ab85a5c2
